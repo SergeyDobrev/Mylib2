@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Library</title>
+
+</head>
+<body>
+
+<button onclick="connect_library_fun()">Connect Library</button>
+<button onclick="dsconnect_library_fun()">Disconnect Library</button>
+<script id="script_lib" type="text/javascript" src="script_lib.js"></script>
+<br>
+<br>
+
+	<img src="red2.jpg" onclick="myfun()">
+
+	<script type="text/javascript">
+
+		var myarray = ["red2.jpg","silver2.jpg","black2.jpg"];
+		var n = 0;
+		function myfun() {
+			n++;
+			document.querySelector("img").src = myarray[(n % 3)];
+		}
+		
+	</script>
+</body>
+</html>
